@@ -1,0 +1,4 @@
+com\rewdev\auto_mouse\App.class
+module-info.class
+com\rewdev\auto_mouse\core\MouseMovement.class
+com\rewdev\auto_mouse\PrimaryController.class

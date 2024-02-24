@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="439.0" maxWidth="440.0" minHeight="234.0" minWidth="382.0" prefHeight="240.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rewdev.auto_mouse.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Move mouse" />
+      <HBox layoutX="30.0" layoutY="67.0" prefHeight="32.0" prefWidth="400.0">
+         <children>
+            <HBox prefHeight="35.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="35.0" text="x" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="36.0" text="y" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" right="70.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="90.0" prefHeight="35.0" prefWidth="400.0">
+         <children>
+            <TextField layoutX="231.0" layoutY="48.0" prefHeight="25.0" prefWidth="52.0" fx:id="xField">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="yField" layoutX="257.0" layoutY="48.0" prefHeight="25.0" prefWidth="52.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#startMoveTo" text="Start" />
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="47.0" prefHeight="32.0" prefWidth="400.0">
+         <children>
+            <HBox prefHeight="35.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="35.0" text="x_i" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="36.0" text="y_i" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" right="70.0" />
+               </HBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="35.0" text="x_f" textAlignment="CENTER" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="38.0" text="y_f" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="79.0" prefHeight="35.0" prefWidth="400.0">
+         <children>
+            <TextField prefHeight="25.0" prefWidth="52.0" fx:id="xInitialField">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="yInitialField" layoutX="164.0" layoutY="48.0" prefHeight="25.0" prefWidth="52.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="to">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField layoutX="231.0" layoutY="48.0" prefHeight="25.0" prefWidth="52.0" fx:id="xFinalField">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="yFinalField" layoutX="257.0" layoutY="48.0" prefHeight="25.0" prefWidth="52.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#startMoveFromPosToPos" text="Start" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="146.0" prefHeight="35.0" prefWidth="400.0">
+         <children>
+            <CheckBox fx:id="mousePressedCheckBox" mnemonicParsing="false" text="Mouse pressed " />
+         </children>
+      </HBox>
+   </children>
+</VBox>
